@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museu dos Sonhos | O Arquivo do Inconsciente</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Fundo Animado (Canvas para partículas/glow) -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Cabeçalho (Navegação Glassmorphism) -->
+  <header class="navbar">
+    <div class="logo">Museu dos Sonhos</div>
+    <nav>
+      <a href="#galeria">Galeria</a>
+      <a href="#dicionario">Dicionário</a>
+      <a href="#sobre">Sobre</a>
+      <button class="btn-primary" id="open-modal">Materializar Sonho</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Onde as memórias da noite ganham forma.</h1>
+    <p>Explore o arquivo coletivo do inconsciente humano.</p>
+  </section>
+
+  <!-- Galeria de Sonhos (Layout Mosaico) -->
+  <main class="gallery-container" id="galeria">
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- Cards serão injetados via JavaScript ou adicionados manualmente -->
+      <article class="dream-card" data-emotion="lucid">
+        <div class="card-image" style="background-image: url('https://picsum.photos/400/600?random=1');"></div>
+        <div class="card-overlay">
+          <span class="tag">Lúcido</span>
+          <h3>O Oceano Espelhado</h3>
+          <p>Por @sonhador_01</p>
+        </div>
+      </article>
+
+      <article class="dream-card" data-emotion="mystic">
+        <div class="card-image" style="background-image: url('https://picsum.photos/400/400?random=2');"></div>
+        <div class="card-overlay">
+          <span class="tag">Místico</span>
+          <h3>Cidades Aéreas</h3>
+          <p>Por Anônimo</p>
+        </div>
+      </article>
+
+      <article class="dream-card" data-emotion="melancholy">
+        <div class="card-image" style="background-image: url('https://picsum.photos/400/500?random=3');"></div>
+        <div class="card-overlay">
+          <span class="tag">Melancólico</span>
+          <h3>A Última LUZ da Tarde</h3>
+          <p>Por @luna_s</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
